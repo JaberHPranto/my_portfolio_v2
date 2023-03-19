@@ -65,3 +65,12 @@ export const data = [
     },
   },
 ];
+
+export const tabData = {
+  tabHeaders: ["Code", "About", "Contact"],
+  tabContents: [
+    "This is the content of the Code SectionThis is the content of the Code SectionThis is the content of the Code SectionThis is the content of the Code SectionThis is the content of the Code SectionThis is the content of the Code SectionThis is the content of the Code SectionThis is the content of the Code Section",
+    "This is the content of the About Section",
+    "This is the content of the Contact Section",
+  ],
+};
