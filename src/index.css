@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* Cards */
+.cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#card-one {
+  top: 130%;
+  background-image: url("./assets/fp-1.jpg");
+}
+#card-two {
+  top: 230%;
+  background-image: url("./assets/fp-2.jpg");
+}
+#card-three {
+  top: 250%;
+  background-image: url("./assets/fp-3.jpg");
+}
+
+/* ----- Feature Slides --------- */
+
+.feature-slides-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.feature-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.feature-slide-title {
+  font-size: 4.5vw;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.1;
+}
+.feature-slide-description {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 1.3rem;
+}
+
+.feature-slides-right {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.feature-slides-right img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 1s ease-in-out;
+  position: absolute;
+  left: 0;
+}
+.feature-slides-right .as-primary {
+  opacity: 1;
+  transform: scale(1.1);
+}
