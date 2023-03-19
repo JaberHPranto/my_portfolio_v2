@@ -1,19 +1,20 @@
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect } from "react";
 
 const FeaturedProjects = () => {
+  // gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     var tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#main",
-        markers: true,
+        // markers: true,
         start: "38% 50%",
         end: "100% 50%",
         pin: true,
         scrub: 2,
       },
+      delay: 1,
     });
 
     tl.to(".text", { top: "-7%" }, "a")
