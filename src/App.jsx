@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Banner, Experience, FeaturedProjects, Navbar } from "./sections";
+import {
+  Banner,
+  Experience,
+  FeaturedProjects,
+  Navbar,
+  Skill,
+} from "./sections";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 const App = () => {
@@ -23,6 +29,7 @@ const App = () => {
         <div className="overflow-hidden">
           <Navbar />
           <Banner />
+          <Skill />
           <Experience />
           {/* <div className="h-screen bg-red-400" /> */}
           <FeaturedProjects />
