@@ -1,9 +1,10 @@
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect } from "react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const FeaturedProjects = () => {
-  // gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     var tl = gsap.timeline({
       scrollTrigger: {
