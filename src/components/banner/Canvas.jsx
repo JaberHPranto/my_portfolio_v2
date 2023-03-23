@@ -48,7 +48,7 @@ class Canvas extends React.Component {
       10,
       5000,
     );
-    this.camera.position.set(150, 20, 100); // depends on the model
+    this.camera.position.set(800, 1000, 2000); // depends on the model
     this.scene.add(this.camera);
 
     // loading Manager -> to show user that our model is loading
@@ -131,7 +131,7 @@ class Canvas extends React.Component {
       `${THREE_PATH}/examples/js/libs/draco/gltf/`,
     );
 
-    const bag = "/assets/bag.glb";
+    const bag = "/assets/pc.glb";
     const GltfLoader = new GLTFLoader(this.manager).setDRACOLoader(
       DRACO_LOADER,
     );

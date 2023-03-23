@@ -4,6 +4,7 @@ import { data } from "../data";
 import Loader from "../components/common/Loader";
 import Canvas from "../components/banner/Canvas";
 import Content from "../components/banner/Content";
+import PcCanvas from "../components/banner/PcCanvas";
 
 const Banner = () => {
   const [activeData, setActiveData] = useState(data[0]);
@@ -33,14 +34,20 @@ const Banner = () => {
 
   return (
     <div ref={bannerRef} className="relative h-screen w-screen">
-      {isLoading && <Loader />}
+      {/* {isLoading && <Loader />} */}
       {/* Logo */}
       <div className="logo absolute my-2 ml-6 text-left text-2xl font-bold tracking-widest md:ml-28 lg:my-8 lg:ml-[12vw]">
         PRANTO
       </div>
       {/* Content */}
       <div className="flex h-full w-full flex-col items-center justify-between lg:flex-row-reverse">
-        <Canvas
+        {/* <Canvas
+          activeData={activeData}
+          swatchData={data}
+          handleLoading={handleLoading}
+          handleSwatchClick={handleSwatchClick}
+        /> */}
+        <PcCanvas
           activeData={activeData}
           swatchData={data}
           handleLoading={handleLoading}
