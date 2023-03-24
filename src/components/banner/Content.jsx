@@ -35,21 +35,28 @@ const Content = ({ activeData }) => {
   }, [activeData]);
 
   return (
-    <div className="flex h-2/5 w-full select-none items-center justify-center lg:h-full lg:w-1/2 lg:justify-end ">
-      <div className=" flex w-2/3 flex-col items-start justify-start ">
-        <h1 className="relative mb-1 w-full overflow-hidden p-1 text-left text-5xl font-bold md:mb-2 md:text-[7vw] ">
-          <p className="text">{activeData.heading}</p>
+    <div className="md:-pt-10 flex h-2/5 w-full select-none items-center justify-center lg:ml-12 lg:h-full lg:w-1/2">
+      <div className="flex w-full flex-col md:w-2/3 md:items-start md:justify-start">
+        <h1 className="relative mb-1 w-full overflow-hidden p-1 text-center text-base md:mb-2 md:text-left md:text-xl">
+          <p className="text font-semibold">
+            <span className="wave mr-2">👋</span>
+            Hello, I am Pranto
+          </p>
         </h1>
-        <h6 className="font-regular mb-6 w-full overflow-hidden p-1 text-left text-2xl md:text-4xl">
-          <p className="text">{activeData.subHeading}</p>
+        <h6 className="font-regular mb-6 w-full overflow-hidden p-2 text-center text-2xl md:text-left md:text-3xl lg:text-5xl">
+          <p className="text font-semibold leading-tight">
+            I love to build <span>fun</span> and <span>interactive</span> things
+            for the web
+          </p>
         </h6>
-        <h6 className="mb-8 w-full overflow-hidden p-1 text-left text-xs font-medium  md:mb-12 md:text-base ">
-          <p className="text">{activeData.text}</p>
-        </h6>
-        <div className="relative overflow-hidden p-4 ">
-          <button className="text button cursor-pointer rounded-2xl bg-[#4A6E6A] px-8 py-2  font-medium  outline-none  md:px-10 md:py-4  ">
-            Shop Now
-          </button>
+
+        <div className="relative flex items-center justify-center overflow-hidden bg-transparent py-4 md:block">
+          <a
+            className="text button cursor-pointer rounded-2xl px-8 py-2 font-medium  outline-none  md:px-10 md:py-4"
+            href="#"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>

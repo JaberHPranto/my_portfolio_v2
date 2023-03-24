@@ -1,8 +1,15 @@
+import useThemeStore from "../../store";
 import SingleSwatch from "./SingleSwatch";
 
 const SwatchWrapper = ({ activeData, swatchData, handleSwatchClick }) => {
-  const handleSwatch = (id) => {
-    handleSwatchClick(id);
+  const [theme, setTheme] = useThemeStore((state) => [
+    state.theme,
+    state.setTheme,
+  ]);
+
+  const handleSwatch = (newTheme) => {
+    setTheme(newTheme);
+    handleSwatchClick(newTheme);
   };
 
   return (

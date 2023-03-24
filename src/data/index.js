@@ -16,68 +16,30 @@ import {
 export const data = [
   {
     id: 1,
-    heading: "Sandy Shores",
-    subHeading: "Unwavering Beige Beauty",
-    text: "It is a versatile and neutral color that can be paired with a variety of different outfits and styles.",
+    theme: "Cream",
     swatchColor: "#E6D3C4",
     background: "#E5E5E5",
-    headingColor: "#000",
-    buttonColor: { text: "#000", background: "#D7B172" },
-    itemList: {
-      bag: {
-        color: "#E6D3C4",
-      },
-      strap: {
-        color: "#5E2B17",
-      },
-      metal: {
-        color: "#D7B172",
-      },
-    },
+    headingColor: "#242526",
+    secondaryColor: "#D7B172",
+    buttonColor: { text: "#242526", background: "#D7B172" },
   },
   {
     id: 2,
-    heading: "Earthy Khaki",
-    subHeading: "Chestnut with red tint.",
-    text: " The brown color of the bag adds a touch of warmth and earthiness to its appearance, making it suitable for a wide range of occasions and outfits.",
-
-    swatchColor: "#4e4641",
-    background: "#79716C",
+    theme: "Dark",
+    swatchColor: "#303133",
+    background: "#242526",
     headingColor: "#ffffff",
-    buttonColor: { text: "#ffffff", background: "#774a37" },
-    itemList: {
-      bag: {
-        color: "#774a37",
-      },
-      strap: {
-        color: "#503830",
-      },
-      metal: {
-        color: "#d4c5b5",
-      },
-    },
+    secondaryColor: "#3a3b3c",
+    buttonColor: { text: "#242526", background: "#fbd38d" },
   },
   {
     id: 3,
-    heading: "Ocean Explorer",
-    subHeading: "Ocean with coral tint.",
-    text: "The color blue is often associated with calmness, trust, and intelligence, making a blue backpack a great choice for anyone looking for a stylish and versatile bagpack.",
-
+    theme: "Ocean",
     swatchColor: "#4F92B1",
     background: "#C1D6E3",
     headingColor: "#1F333E",
+    secondaryColor: "#2f7393",
     buttonColor: { text: "#fff", background: "#2f7393" },
-    itemList: {
-      bag: {
-        color: "#2f7393",
-      },
-      strap: {
-        color: "#1d1b1b",
-      },
-      metal: {
-        color: "#F2F2F2",
-      },
-    },
   },
 ];
 

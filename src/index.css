@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .nav-link {
+    @apply mb-5 text-3xl text-white/80 transition-all duration-200 ease-in-out hover:text-white md:text-4xl;
+  }
+  .background {
+    @apply absolute -z-10 select-none text-[8rem] font-semibold  text-[#ebebeb0a] md:text-[15rem];
+  }
+}
+
 *,
 *::before,
 ::after {
@@ -31,7 +40,6 @@
   padding: 0px 50px;
   position: fixed;
   top: -100%;
-  background-color: rgb(39, 39, 39);
   z-index: 50;
 }
 
@@ -40,37 +48,16 @@
   margin-bottom: -20px;
 }
 
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  transition: all 0.2s ease-in-out;
-}
-
-.nav-link:hover {
-  color: gray;
-}
-
-.background {
-  position: absolute;
-  font-size: 15rem;
-  font-weight: 600;
-  color: rgba(235, 235, 235, 0.04);
-  user-select: none;
-  z-index: -10;
-}
-
 .small-number {
   font-size: 1rem;
 }
 
-.exit {
-  cursor: pointer;
-  position: absolute;
-  right: 40px;
-  top: 40px;
-  color: white;
+/* Banner */
+.banner-text {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 /* Cards */
@@ -279,5 +266,41 @@
       0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+  }
+}
+
+/* Wave hand animation */
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
   }
 }

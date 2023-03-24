@@ -9,8 +9,8 @@ const PCModel = () => {
 
   return (
     <mesh rotation-y={Math.PI * 0.25}>
-      <hemisphereLight intensity={0.5} groundColor="black" />
-      <pointLight intensity={1} />
+      <hemisphereLight intensity={0.8} groundColor="black" />
+      <pointLight intensity={1.5} />
       <primitive object={pc.scene} />
     </mesh>
   );
@@ -37,7 +37,6 @@ const PcCanvas = ({ activeData, swatchData, handleSwatchClick }) => {
             enableZoom={false}
             maxPolarAngle={Math.PI / 2}
             autoRotate={true}
-
             //   minPolarAngle={Math.PI / 2}
           />
           <PCModel />
@@ -50,7 +49,10 @@ const PcCanvas = ({ activeData, swatchData, handleSwatchClick }) => {
         handleSwatchClick={handleSwatchClick}
       />
 
-      <div className="highlight absolute inset-x-40 top-0 -z-10 h-1/2 w-2/5 rounded-bl-full rounded-br-full bg-[#D7b172] opacity-50 md:inset-x-60" />
+      <div
+        className={`highlight absolute inset-x-40 top-0 -z-10 h-1/2 w-2/5 rounded-bl-full rounded-br-full opacity-50 md:inset-x-60`}
+        style={{ backgroundColor: activeData.secondaryColor }}
+      />
     </div>
   );
 };
