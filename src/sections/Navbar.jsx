@@ -50,22 +50,22 @@ const Navbar = () => {
           <ul className="options">
             <li className="nav">
               <a href="#" className="nav-link">
-                Home <span className="small-number">01</span>
+                About <span className="small-number">01</span>
               </a>
             </li>
             <li className="nav">
               <a href="#" className="nav-link">
-                About <span className="small-number">02</span>
+                Experience <span className="small-number">02</span>
               </a>
             </li>
             <li className="nav">
               <a href="#" className="nav-link">
-                Work <span className="small-number">03</span>
+                Skill <span className="small-number">03</span>
               </a>
             </li>
             <li className="nav">
               <a href="#" className="nav-link">
-                Skill <span className="small-number">04</span>
+                Works <span className="small-number">04</span>
               </a>
             </li>
             <li className="nav">

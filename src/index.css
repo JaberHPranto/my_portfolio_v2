@@ -138,14 +138,6 @@
   transform: scale(1.1);
 }
 
-/* Experience */
-.tab-header > div:hover {
-  background-color: skyblue;
-}
-.tab-header > div.active-tab {
-  color: cornflowerblue;
-}
-
 .active-tab {
   top: 0;
 }
@@ -153,8 +145,7 @@
 .tab-indicator {
   position: absolute;
   width: 4px;
-  height: 40px;
-  background-color: red;
+  height: 44px;
   top: 0;
   right: -3px;
   transition: all 500ms ease-in-out;

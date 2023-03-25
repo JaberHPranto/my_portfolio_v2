@@ -1,43 +1,105 @@
 import React, { useState } from "react";
-import { tabData } from "../data";
+import { experienceData } from "../data";
+import AppWrapper from "../components/common/AppWrapper";
+import SectionHeader from "../components/common/SectionHeader";
+import { BsOctagonFill } from "react-icons/bs";
+import useThemeStore from "../store";
 
 const Experience = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const theme = useThemeStore((state) => state.theme);
 
   return (
-    <div className="relative flex h-screen items-center justify-center bg-[#dde2ef]">
-      <div className="flex h-[360px] w-full flex-col overflow-hidden bg-blue-100 px-10 py-8 shadow-lg md:w-2/3 md:flex-row lg:w-1/2">
-        <div className="tab-header relative flex w-full items-center justify-center gap-10 md:block md:w-1/4 md:border-r-2 md:border-green-300">
-          {tabData.tabHeaders.map((tab, index) => (
-            <div
-              className={`h-10 cursor-pointer pl-4 text-lg  font-semibold
-              ${activeTabIndex === index && "active-tab"}
-                  `}
-              key={index}
-              onClick={() => setActiveTabIndex(index)}
-            >
-              {tab}
-            </div>
-          ))}
+    <div
+      className="h-[80vh] bg-red-400  md:h-[90vh]"
+      style={{
+        backgroundColor: theme.background,
+        color: theme.headingColor,
+      }}
+    >
+      <SectionHeader serial="02" text={"Where I have worked"} />
+      <div className="relative -mt-4 flex items-center justify-center">
+        <div
+          className="mt-0 flex h-[70vh] w-full flex-col overflow-hidden px-5 py-8 md:mt-10 md:h-[400px] md:w-2/3 md:flex-row lg:w-1/2"
+          style={{
+            backgroundColor: theme.background,
+          }}
+        >
           <div
-            className={`tab-indicator hidden md:block`}
+            className="tab-header relative flex w-full items-center justify-center md:block md:h-[280px] md:w-2/5 md:border-r-2"
             style={{
-              top: `calc(0px + ${activeTabIndex * 40}px)`,
+              borderColor: theme.tertiaryColor,
             }}
-          ></div>
-        </div>
-        <div className="tab-content relative w-full">
-          {tabData.tabContents.map((tab, index) => (
+          >
+            {experienceData.map((experience, index) => (
+              <div
+                className={`cursor-pointer p-2 text-center font-semibold transition-all duration-200 ease-in md:text-lg
+              ${activeTabIndex === index && "active-tab"} `}
+                key={index}
+                onClick={() => setActiveTabIndex(index)}
+                style={{
+                  backgroundColor:
+                    activeTabIndex === index ? theme.tertiaryColor : "",
+                }}
+              >
+                {experience.companyName}
+              </div>
+            ))}
             <div
-              className={`absolute py-10 px-5 transition-all duration-500 ease-in ${
-                activeTabIndex === index ? "opacity-1 " : " opacity-0"
-              }`}
-              key={index}
-            >
-              <h2 className="text-2xl font-bold">Section - {index}</h2>
-              <p>{tab}</p>
-            </div>
-          ))}
+              className={`tab-indicator hidden md:block`}
+              style={{
+                backgroundColor: theme.buttonColor.background,
+                top: `calc(0px + ${activeTabIndex * 44}px)`,
+              }}
+            ></div>
+          </div>
+          <div className="tab-content relative mt-4 w-full md:mt-0">
+            {experienceData.map((experience, index) => (
+              <div
+                className={`absolute px-5 transition-all duration-500 ease-in ${
+                  activeTabIndex === index ? "opacity-1 " : " opacity-0"
+                }`}
+                key={index}
+              >
+                <h2 className="text-base font-bold">
+                  {experience.role}{" "}
+                  {/* <span className="ml-1 font-semibold text-red-300">
+                    @
+                    <a
+                      href={experience.companyWebsite}
+                      target="_blank"
+                      style={{
+                        position: "relative",
+                        zIndex: `-${index + 1}`,
+                        top: `${index * 10}`,
+                      }}
+                    >
+                      {experience.companyName}
+                    </a>
+                  </span>{" "} */}
+                </h2>
+                <p className="mb-4 text-sm">
+                  {experience.period.startDate} - {experience.period.endDate}
+                </p>
+                <div>
+                  {experience.responsibilities.map((responsibility, index) => (
+                    <div key={index} className="mb-2 flex">
+                      <div
+                        className="mr-2 mt-1.5 text-[11px] md:mt-1"
+                        style={{
+                          color: theme.buttonColor.background,
+                          opacity: 0.8,
+                        }}
+                      >
+                        <BsOctagonFill />
+                      </div>
+                      <p className="text-sm">{responsibility}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

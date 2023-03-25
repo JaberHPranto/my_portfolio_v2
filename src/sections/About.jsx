@@ -43,7 +43,7 @@ const About = () => {
         <div ref={triggerRef}>
           {aboutText.split("").map((letter, index) => (
             <span
-              className="reveal-text text-[40px] font-bold md:text-[60px] lg:text-[80px]"
+              className="reveal-text text-[30px] font-bold md:text-[50px] lg:text-[70px]"
               style={{
                 color: theme.background,
               }}
