@@ -13,6 +13,15 @@ import {
   git,
   next,
 } from "../assets/skills";
+import {
+  flipClipImage,
+  flipClipVideo,
+  plantLandImage,
+  plantLandVideo,
+  snappyImage,
+  snappyVideo,
+} from "../assets/featuredProjects";
+
 export const data = [
   {
     id: 1,
@@ -22,6 +31,7 @@ export const data = [
     headingColor: "#242526",
     secondaryColor: "#D7B172",
     tertiaryColor: "#d7b17240",
+    cardColor: "#EEDDC1",
     buttonColor: { text: "#242526", background: "#D7B172" },
   },
   {
@@ -32,6 +42,7 @@ export const data = [
     headingColor: "#ffffff",
     secondaryColor: "#3a3b3c",
     tertiaryColor: "#fbd38d40",
+    cardColor: "#323333",
     buttonColor: { text: "#242526", background: "#fbd38d" },
   },
   {
@@ -42,6 +53,7 @@ export const data = [
     headingColor: "#1F333E",
     secondaryColor: "#2f7393",
     tertiaryColor: "#2f739340",
+    cardColor: "#90c4dc",
     buttonColor: { text: "#fff", background: "#2f7393" },
   },
 ];
@@ -130,5 +142,42 @@ export const skillsData = [
   {
     name: "Framer Motion",
     icon: motion,
+  },
+];
+
+export const featuredProjects = [
+  {
+    id: "one",
+    name: "Plant Land",
+    description:
+      "A full-stack web application that provides a single platform for tree enthusiasts which comprises of a Marketplace, a Blog area, and uses external APIs for Plant Identification and Plant Search.",
+    techStack: ["React", "Nodejs", "Express", "MongoDB", "Redux"],
+    isLive: true,
+    liveLink: "https://plantland.netlify.app/",
+    githubLink: "https://github.com/JaberHPranto/Plant-Land",
+    video: plantLandVideo,
+    poster: plantLandImage,
+  },
+  {
+    id: "two",
+    name: "Snappy",
+    description:
+      "A real-time collaborative whiteboard with an inbuilt chat system. The project was developed without the use of anylibraries for canvas drawing. Canvas API was used for drawing, resizing, and moving objects on the canvas",
+    techStack: ["React", "Nodejs", "Socket.IO", "RoughJs", "Recoil"],
+    isLive: false,
+    githubLink: "https://github.com/JaberHPranto/Snappy",
+    video: snappyVideo,
+    poster: snappyImage,
+  },
+  {
+    id: "three",
+    name: "FlipClip Chrome Extension",
+    description:
+      "Developed a Google Chrome extension that allows users to build flashcards from websites. Chorme storage API was used to store the data for the flashcards, and chorme message passing API was used to communicate between the background and content scripts. Embed iframes to create cards and take sessions",
+    techStack: ["HTML", "CSS", "JavaScript", "JQuery"],
+    isLive: false,
+    githubLink: "https://github.com/JaberHPranto/Flip-Clip",
+    video: flipClipVideo,
+    poster: flipClipImage,
   },
 ];

@@ -4,7 +4,7 @@ import useThemeStore from "../../store";
 const SectionHeader = ({ serial, text }) => {
   const theme = useThemeStore((state) => state.theme);
   return (
-    <div className="ml-10 flex  items-center py-5 text-xl font-semibold md:ml-44 lg:text-3xl">
+    <div className="ml-10 flex items-center py-5 text-xl font-semibold md:ml-44 lg:text-3xl">
       <span
         className="mr-2 font-bold"
         style={{

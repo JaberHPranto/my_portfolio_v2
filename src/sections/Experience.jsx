@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { experienceData } from "../data";
-import AppWrapper from "../components/common/AppWrapper";
-import SectionHeader from "../components/common/SectionHeader";
 import { BsOctagonFill } from "react-icons/bs";
+import SectionHeader from "../components/common/SectionHeader";
+import { experienceData } from "../data";
 import useThemeStore from "../store";
 
 const Experience = () => {
@@ -11,7 +10,7 @@ const Experience = () => {
 
   return (
     <div
-      className="h-[80vh] bg-red-400  md:h-[90vh]"
+      className="h-[80vh] md:h-[90vh]"
       style={{
         backgroundColor: theme.background,
         color: theme.headingColor,
