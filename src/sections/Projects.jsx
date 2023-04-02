@@ -44,11 +44,26 @@ function Projects() {
             ref={projectRef}
             className="project-set ns-horizontal-section__item z-50 flex h-full w-screen items-center bg-transparent px-12"
           >
-            <img
-              src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="1st image"
-              className="m-auto max-h-[60vh] max-w-[70vw]"
-            />
+            <div className="m-auto flex max-h-[80vh] max-w-[70vw] bg-red-500">
+              <img
+                src="https://images.pexels.com/photos/1601775/pexels-photo-1601775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="2ndimage"
+                className="h-[50vh] w-1/2"
+              />
+              <div className="flex w-1/2 flex-col items-end justify-center gap-5">
+                <h1 className="text-center text-2xl font-bold md:text-left md:text-3xl">
+                  Awesome Project
+                </h1>
+                <div className="-ml-12 bg-green-400 p-6 text-right">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Impedit ab corporis voluptas iure voluptatum, corrupti, ipsam
+                  soluta odio nisi nostrum non asperiores ipsa. Qui, adipisci
+                  minus unde obcaecati assumenda blanditiis.
+                </div>
+                <div>Tech</div>
+                <div>Buttons</div>
+              </div>
+            </div>
           </section>
           <section
             ref={projectRef}

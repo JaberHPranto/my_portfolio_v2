@@ -38,7 +38,7 @@ const FeaturedProjects = () => {
   }, []);
 
   return (
-    <div
+    <section
       id="main"
       className="relative min-h-[150vh] w-[100%]"
       style={{
@@ -116,7 +116,7 @@ const FeaturedProjects = () => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

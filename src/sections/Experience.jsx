@@ -9,7 +9,7 @@ const Experience = () => {
   const theme = useThemeStore((state) => state.theme);
 
   return (
-    <div
+    <section
       className="h-[80vh] md:h-[90vh]"
       style={{
         backgroundColor: theme.background,
@@ -101,7 +101,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

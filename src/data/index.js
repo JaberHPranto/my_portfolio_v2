@@ -181,3 +181,46 @@ export const featuredProjects = [
     poster: flipClipImage,
   },
 ];
+
+export const Projects = [
+  {
+    name: "Health Diary",
+    description:
+      " A web-based telemedicine service that connects doctors and patients and allows patients to receive care at a distance. Patients can schedule appointments with specialists and communicate with them in real-time",
+    techStack: ["React", "Nodejs", "Express", "MongoDB", "Redux"],
+    type: "image",
+    isLive: false,
+    githubLink: "https://github.com/JaberHPranto/HealthDiary",
+  },
+  {
+    name: "MarkInk",
+    description:
+      "A github flavored markdown editor which allows you to quickly add and customize all the sections you need for github project’s readme.Integrate popular code-mirror editor which enhance the writing experience of the users. Implemented quick shortcuts for common markdown syntax which lets users write markdown in a efficient and effective way.",
+    techStack: ["React", "React Markdown", "Code Mirror"],
+    type: "image",
+    isLive: true,
+    liveLink: "https://markink.netlify.app/",
+    githubLink: "https://github.com/JaberHPranto/MarkInk",
+  },
+  {
+    name: "Game Station",
+    description:
+      "A video game informational application that allows users to learn everything there is to know about their favorite video games and discover new ones. For video games data, I used Rapid API and React-query to effectively fetch and cache over 5000 records.",
+    techStack: ["React", "React Query", "Rapid API"],
+    type: "image",
+    isLive: true,
+    liveLink: "https://gamesstation.netlify.app/",
+    githubLink: "https://github.com/JaberHPranto/Game-Station",
+  },
+  {
+    name: "Mirchi Dhaba",
+    description:
+      "A video game informational application that allows users to learn everything there is to know about their favorite video games and discover new ones. For video games data, I used Rapid API and React-query to effectively fetch and cache over 5000 records.",
+    techStack: ["React", "React Query", "Rapid API"],
+    type: "video",
+    category: "Freelance Work",
+    isLive: true,
+    liveLink: "https://gamesstation.netlify.app/",
+    githubLink: "https://github.com/JaberHPranto/Game-Station",
+  },
+];

@@ -40,7 +40,7 @@ const Banner = () => {
   };
 
   return (
-    <div ref={bannerRef} className="relative h-screen w-screen">
+    <section ref={bannerRef} className="relative h-screen w-screen">
       {/* Logo */}
       <div className="logo absolute my-2 ml-6 text-left text-2xl font-bold tracking-widest md:ml-28 lg:my-8 lg:ml-[12vw]">
         PRANTO
@@ -55,7 +55,7 @@ const Banner = () => {
         />
         <Content activeData={activeData} />
       </div>
-    </div>
+    </section>
   );
 };
 

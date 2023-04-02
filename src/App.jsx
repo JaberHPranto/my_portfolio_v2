@@ -1,15 +1,8 @@
-import React, { useEffect, useState } from "react";
-import {
-  About,
-  Banner,
-  Experience,
-  FeaturedProjects,
-  Navbar,
-  Projects,
-  Skill,
-} from "./sections";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   const [loader, setLoader] = useState(false);
@@ -29,15 +22,9 @@ const App = () => {
       {loader ? (
         "Loading"
       ) : (
-        <div className="overflow-hidden">
-          <Navbar />
-          <Banner />
-          <About />
-          <Experience />
-          <Skill />
-          <FeaturedProjects />
-          <Projects />
-        </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       )}
     </>
   );
