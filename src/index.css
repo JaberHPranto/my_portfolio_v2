@@ -9,6 +9,12 @@
   .background {
     @apply absolute -z-10 select-none text-[8rem] font-semibold  text-[#ebebeb0a] md:text-[15rem];
   }
+  .hackathonImage {
+    @apply h-[300px] w-full rounded-lg object-cover shadow-xl;
+  }
+  .text-underline {
+    @apply underline decoration-wavy underline-offset-8;
+  }
 }
 
 *,
@@ -290,13 +296,3 @@
 .swiper {
   width: 280px;
 }
-
-/* .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
-} */

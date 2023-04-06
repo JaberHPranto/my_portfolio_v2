@@ -74,7 +74,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav">
-              <a href="#" className="nav-link">
+              <a href="/achievement/hackathon" className="nav-link">
                 Achievement <span className="small-number">06</span>
               </a>
             </li>

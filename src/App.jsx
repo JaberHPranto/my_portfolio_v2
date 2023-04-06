@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
+import Achievement from "./pages/Achievement";
 import HomePage from "./pages/HomePage";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
       ) : (
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/achievement/hackathon" element={<Achievement />} />
         </Routes>
       )}
     </>
