@@ -52,7 +52,8 @@ const Content = ({ activeData }) => {
         <div className="relative flex items-center justify-center overflow-hidden bg-transparent py-4 md:block">
           <a
             className="text button cursor-pointer rounded-2xl px-8 py-2 font-medium  outline-none  md:px-10 md:py-4"
-            href="#"
+            href="https://drive.google.com/file/d/1Tzu0BhJygAaxrABHVk18PghEdM4d_qsh/view?usp=sharing"
+            target="_blank"
           >
             Resume
           </a>
