@@ -285,3 +285,18 @@
     transform: rotate(0deg);
   }
 }
+
+/* Swipper JS Cards */
+.swiper {
+  width: 280px;
+}
+
+/* .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+} */

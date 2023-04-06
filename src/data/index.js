@@ -22,6 +22,18 @@ import {
   snappyVideo,
 } from "../assets/featuredProjects";
 
+import {
+  gamesStation,
+  healthDiary,
+  iutCSVideo,
+  iutCSImage,
+  markInk,
+  medibeeVideo,
+  medibeeImage,
+  mirchiDhabaImage,
+  mirchiDhabaVideo,
+} from "../assets/projects";
+
 export const data = [
   {
     id: 1,
@@ -32,7 +44,7 @@ export const data = [
     secondaryColor: "#D7B172",
     tertiaryColor: "#d7b17240",
     cardColor: "#EEDDC1",
-    buttonColor: { text: "#242526", background: "#D7B172" },
+    buttonColor: { text: "#fff", background: "#D7B172" },
   },
   {
     id: 2,
@@ -182,7 +194,7 @@ export const featuredProjects = [
   },
 ];
 
-export const Projects = [
+export const projects = [
   {
     name: "Health Diary",
     description:
@@ -191,16 +203,18 @@ export const Projects = [
     type: "image",
     isLive: false,
     githubLink: "https://github.com/JaberHPranto/HealthDiary",
+    picture: healthDiary,
   },
   {
     name: "MarkInk",
     description:
-      "A github flavored markdown editor which allows you to quickly add and customize all the sections you need for github project’s readme.Integrate popular code-mirror editor which enhance the writing experience of the users. Implemented quick shortcuts for common markdown syntax which lets users write markdown in a efficient and effective way.",
+      "A github flavored markdown editor.Integrate popular code-mirror editor which enhance the writing experience of the users. Implemented quick shortcuts for common markdown syntax which lets users write markdown in a efficient and effective way.",
     techStack: ["React", "React Markdown", "Code Mirror"],
     type: "image",
     isLive: true,
     liveLink: "https://markink.netlify.app/",
     githubLink: "https://github.com/JaberHPranto/MarkInk",
+    picture: markInk,
   },
   {
     name: "Game Station",
@@ -211,16 +225,39 @@ export const Projects = [
     isLive: true,
     liveLink: "https://gamesstation.netlify.app/",
     githubLink: "https://github.com/JaberHPranto/Game-Station",
+    picture: gamesStation,
+  },
+  {
+    name: "IUTCS Website",
+    description:
+      "Develop the website for IUT Computer Society (IUTCS) where every thing related to the society - about, activities, committee members, achievements, sponors has been outlined.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion"],
+    type: "video",
+    isLive: false,
+    githubLink: "https://github.com/iut-cse/iutcs-website-22",
+    picture: iutCSImage,
+    video: iutCSVideo,
   },
   {
     name: "Mirchi Dhaba",
     description:
-      "A video game informational application that allows users to learn everything there is to know about their favorite video games and discover new ones. For video games data, I used Rapid API and React-query to effectively fetch and cache over 5000 records.",
-    techStack: ["React", "React Query", "Rapid API"],
+      "Mirchi Dhaba is an online tiffin delivery service. The application has a client side version where normal users can buy food packages and track their package status and also an admin side where admins can perform crud operations on food packages, users, carousel images etc.",
+    techStack: ["Next js", "Tailwind CSS", "SWR", "Zustand"],
     type: "video",
     category: "Freelance Work",
-    isLive: true,
-    liveLink: "https://gamesstation.netlify.app/",
-    githubLink: "https://github.com/JaberHPranto/Game-Station",
+    isLive: false,
+    picture: mirchiDhabaImage,
+    video: mirchiDhabaVideo,
+  },
+  {
+    name: "Medibee Admin Dashboard",
+    description:
+      "Developed the admin dashboard of Medibee (learning-based app for medical students) that serves content to more than 20K users. Implemented crud operation for users, courses, quizzes, mcqs, resources and subscription packages. Integrated a real time support system using Scoket.IO.",
+    techStack: ["React", "Redux", "SWR", "Socket.IO"],
+    type: "video",
+    category: "Freelance Work",
+    isLive: false,
+    picture: medibeeImage,
+    video: medibeeVideo,
   },
 ];

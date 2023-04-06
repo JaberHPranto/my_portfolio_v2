@@ -1,59 +1,31 @@
-import { useState } from "react";
-import ReactSimplyCarousel from "react-simply-carousel";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const Carousel = () => {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { EffectCards } from "swiper";
+import { projects } from "../../data";
+import ProjectCard from "../projects/ProjectCard";
+
+export default function Carousel() {
   return (
-    <ReactSimplyCarousel
-      activeSlideIndex={activeSlideIndex}
-      onRequestChange={setActiveSlideIndex}
-      itemsToShow={1}
-      itemsToScroll={1}
-      containerProps={{
-        style: {
-          width: "100%",
-          userSelect: "none",
-          padding: "0 20px",
-        },
-      }}
-      dotsNav={{
-        show: true,
-        itemBtnProps: {
-          style: {
-            height: 16,
-            width: 16,
-            borderRadius: "50%",
-            border: 0,
-            background: "pink",
-          },
-        },
-        activeItemBtnProps: {
-          style: {
-            height: 16,
-            width: 16,
-            borderRadius: "50%",
-            border: 0,
-            background: "black",
-          },
-        },
-      }}
-      speed={400}
-      easing="linear"
-    >
-      <div className="md:w[400px] h-[280px] w-[500px] bg-green-200">
-        slide 0
-      </div>
-      <div className="md:w[400px] h-[280px] w-[500px] bg-green-200">
-        slide 1
-      </div>
-      <div className="md:w[400px] h-[280px] w-[500px] bg-green-200">
-        slide 3
-      </div>
-      <div className="md:w[400px] h-[280px] w-[500px] bg-green-200">
-        slide 4
-      </div>
-    </ReactSimplyCarousel>
+    <>
+      <Swiper
+        effect={"cards"}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className="mySwiper"
+      >
+        {projects.map((project, i) => (
+          <SwiperSlide key={i}>
+            <ProjectCard project={project} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
-};
-
-export default Carousel;
+}

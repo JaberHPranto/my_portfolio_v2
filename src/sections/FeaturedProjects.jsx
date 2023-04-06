@@ -75,7 +75,12 @@ const FeaturedProjects = () => {
             <h1 className="text-center text-[28px] font-bold md:text-left md:text-[32px]">
               {project.name}
             </h1>
-            <p className="text-center text-sm md:text-left md:text-base">
+            <p
+              className="text-center text-sm md:text-left md:text-base"
+              style={{
+                backgroundColor: theme.cardColor,
+              }}
+            >
               {project.description}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
