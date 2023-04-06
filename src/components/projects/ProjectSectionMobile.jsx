@@ -15,7 +15,7 @@ const ProjectsSectionMobile = () => {
         style={{
           color: theme.theme == "Dark" ? "#fbd38d" : theme.secondaryColor,
         }}
-        className="ml-5 flex items-center py-5 text-xl font-bold"
+        className="ml-5 flex items-center py-5 font-overpass text-xl font-bold"
       >
         Other Noteworthy Projects
       </span>

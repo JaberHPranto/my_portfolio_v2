@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
       <div className="flex h-2/3 flex-col items-center justify-center gap-1">
         <div className="flex flex-col items-center">
           <h1
-            className="text-center text-xl font-bold"
+            className="text-center font-alkatra text-xl  font-bold"
             style={{
               color: theme.theme == "Dark" ? "#fbd38d" : theme.secondaryColor,
             }}
@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
           </h1>
           {project?.category && (
             <span
-              className="text-left text-sm font-semibold"
+              className="text-left font-alkatra text-sm font-semibold"
               style={{ color: theme.buttonColor.background }}
             >
               #FreelanceWork
@@ -39,7 +39,7 @@ const ProjectCard = ({ project }) => {
           )}
         </div>
         <div
-          className="p-2 text-center text-xs leading-relaxed opacity-75"
+          className="p-2 text-center font-mplus text-xs leading-relaxed opacity-75"
           style={{
             backgroundColor: theme.cardColor,
           }}
@@ -53,7 +53,7 @@ const ProjectCard = ({ project }) => {
           }}
         >
           {project.techStack.map((tech) => (
-            <div className="text-xs font-semibold" key={tech}>
+            <div className="font-alkatra text-xs font-semibold" key={tech}>
               {tech}
             </div>
           ))}

@@ -32,7 +32,7 @@ const Experience = () => {
           >
             {experienceData.map((experience, index) => (
               <div
-                className={`cursor-pointer p-2 text-center font-semibold transition-all duration-200 ease-in md:text-lg
+                className={`cursor-pointer p-2 text-center font-mplus font-semibold transition-all duration-200 ease-in md:text-lg
               ${activeTabIndex === index && "active-tab"} `}
                 key={index}
                 onClick={() => setActiveTabIndex(index)}

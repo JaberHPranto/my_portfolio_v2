@@ -6,7 +6,7 @@ const SectionHeader = ({ serial, text }) => {
   return (
     <div className="ml-10 flex items-center py-5 text-xl font-semibold md:ml-44 lg:text-3xl">
       <span
-        className="mr-2 font-bold"
+        className="mr-2 font-overpass font-bold "
         style={{
           color: theme.theme == "Dark" ? "#fbd38d" : theme.secondaryColor,
         }}
@@ -17,7 +17,7 @@ const SectionHeader = ({ serial, text }) => {
         style={{
           color: theme.theme == "Dark" ? "#fbd38d" : theme.secondaryColor,
         }}
-        className="font-bold"
+        className="font-overpass font-bold "
       >
         {text}
       </span>

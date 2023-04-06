@@ -72,11 +72,11 @@ const FeaturedProjects = () => {
               color: theme.theme == "Dark" ? "#fbd38d" : theme.secondaryColor,
             }}
           >
-            <h1 className="text-center text-[28px] font-bold md:text-left md:text-[32px]">
+            <h1 className="text-center font-alkatra text-[28px] font-bold md:text-left md:text-[32px]">
               {project.name}
             </h1>
             <p
-              className="text-center text-sm md:text-left md:text-base"
+              className="text-center font-mplus text-sm md:text-left md:text-base"
               style={{
                 backgroundColor: theme.cardColor,
               }}
@@ -85,7 +85,7 @@ const FeaturedProjects = () => {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               {project.techStack.map((tech) => (
-                <div className="font-semibold" key={tech}>
+                <div className="font-alkatra font-semibold" key={tech}>
                   {tech}
                 </div>
               ))}

@@ -40,12 +40,12 @@ const Achievement = () => {
         </a>
       </div>
       <h1
-        className="pb-8 text-center text-xl font-bold leading-relaxed md:text-3xl"
+        className="pb-8 text-center font-mplus text-xl font-bold leading-relaxed md:text-3xl"
         style={{
           color: theme.buttonColor.background,
         }}
       >
-        Champion at the Orbitax SUST SWE Technovent 2023 <br /> BrainStation23
+        Champion of Orbitax SUST SWE Technovent 2023 <br /> BrainStation23
         Hackathon
       </h1>
       {/* Hackathon Winning Pics */}
@@ -62,7 +62,9 @@ const Achievement = () => {
         }}
       >
         <TbBulb className="mr-1.5 text-2xl" />
-        <h3 className="text-2xl font-semibold">Our Idea in a Gist</h3>
+        <h3 className="font-opensans text-2xl font-semibold">
+          Our Idea in a Gist
+        </h3>
         <div
           className="ml-4 block h-[3px] w-1/4 opacity-50"
           style={{
@@ -154,7 +156,7 @@ const Achievement = () => {
         }}
       >
         <TbLink className="mr-1.5 text-2xl" />
-        <h3 className="text-2xl font-semibold">Document Links</h3>
+        <h3 className="font-opensans text-2xl font-semibold">Document Links</h3>
         <div
           className="ml-4 block h-[3px] w-1/4 opacity-50"
           style={{

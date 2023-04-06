@@ -38,15 +38,14 @@ const Content = ({ activeData }) => {
     <div className="md:-pt-10 flex h-2/5 w-full select-none items-center justify-center lg:ml-12 lg:h-full lg:w-1/2">
       <div className="flex w-full flex-col md:w-2/3 md:items-start md:justify-start">
         <h1 className="relative mb-1 w-full overflow-hidden p-1 text-center text-base md:mb-2 md:text-left md:text-xl">
-          <p className="text font-semibold">
+          <p className="text font-alkatra font-semibold">
             <span className="wave mr-2">👋</span>
             Hello, I am Pranto
           </p>
         </h1>
         <h6 className="font-regular mb-6 w-full overflow-hidden p-2 text-center text-2xl md:text-left md:text-3xl lg:text-5xl">
-          <p className="text font-semibold leading-tight">
-            I love to build <span>fun</span> and <span>interactive</span> things
-            for the web
+          <p className="text font-mplus font-semibold leading-tight">
+            I love to build fun and interactive things for the web
           </p>
         </h6>
 

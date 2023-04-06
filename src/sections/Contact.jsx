@@ -14,7 +14,7 @@ const Contact = () => {
     <section className="relative h-screen">
       <SectionHeader serial="05" text="Get In Touch" />
       <div className="mt-10 flex h-full flex-col items-center gap-6 px-4 md:gap-10">
-        <h2 className="max-w-lg text-center text-xl leading-relaxed md:text-2xl">
+        <h2 className="max-w-lg text-center font-mplus text-xl leading-relaxed md:text-2xl">
           Whether you have a question or just want to say hi, I’ll try my best
           to get back to you! <br />
           <a

@@ -78,7 +78,7 @@ function ProjectSectionWeb() {
                 <div className="flex w-full flex-col items-center justify-center gap-5 lg:w-1/2 lg:items-end">
                   <div className="flex flex-col items-center gap-1 lg:items-end">
                     <h1
-                      className="text-center text-2xl font-bold md:text-3xl lg:text-left"
+                      className="text-center font-alkatra text-2xl font-bold md:text-3xl lg:text-left"
                       style={{
                         color:
                           theme.theme == "Dark"
@@ -90,7 +90,7 @@ function ProjectSectionWeb() {
                     </h1>
                     {project?.category && (
                       <span
-                        className="text-left font-semibold"
+                        className="text-left font-alkatra font-semibold"
                         style={{ color: theme.buttonColor.background }}
                       >
                         #FreelanceWork
@@ -98,7 +98,7 @@ function ProjectSectionWeb() {
                     )}
                   </div>
                   <div
-                    className="p-4 text-center text-sm leading-relaxed shadow-xl lg:-ml-12 lg:p-5 lg:text-right"
+                    className="p-4 text-center font-mplus text-sm leading-relaxed shadow-xl lg:-ml-12 lg:p-5 lg:text-right"
                     style={{
                       backgroundColor: theme.cardColor,
                     }}
@@ -115,7 +115,7 @@ function ProjectSectionWeb() {
                     }}
                   >
                     {project.techStack.map((tech) => (
-                      <div className="font-semibold" key={tech}>
+                      <div className="font-alkatra font-semibold" key={tech}>
                         {tech}
                       </div>
                     ))}
